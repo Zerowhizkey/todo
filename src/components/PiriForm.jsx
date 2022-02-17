@@ -15,10 +15,10 @@ function PiriForm(props) {
   }
 
   return (
-    <form action="" onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleChange} />
+    <form className="formSection" action="" onSubmit={handleSubmit}>
+      <input id="inputBar" autocomplete="off" type="text" value={inputValue} onChange={handleChange} />
 
-      <button type="submit">Add</button>
+      <button className="addButton" type="submit">Add</button>
     </form>
   );
 }

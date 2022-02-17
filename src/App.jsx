@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Piri Todo List</h1>
+      <h1 className="title">Piri Todo List</h1>
       <PiriForm onSubmit={handleListItem} />
       <PiriList items={listItem} removeListItem={removePiri} checkListItem={donePiri}/>
     </div>

@@ -1,3 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(29, 253, 245, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.formSection {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+#inputBar {
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.addButton {
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: rgba(0, 60, 255, 0.055);
+}
+
+.ulSection {
+  width: 100%;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.check-button {
+  border-radius: 25%;
+  font-size: 25px;
+  background-color: rgba(0, 60, 255, 0.055);
+}
+
+.delete-button {
+  border-radius: 25%;
+  font-size: 25px;
+  background-color: rgba(0, 60, 255, 0.055);
+}
+
+.check-icon {
+  font-size: 20px;
+}
+
+.delete-icon {
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.notDone {
+  display: flex;
+  border: solid 5px rgba(2, 2, 2, 0.534);
+  border-radius: 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 li.done {
-text-decoration: line-through;
+  display: flex;
+  border: solid 5px rgba(2, 2, 2, 0.534);
+  border-radius: 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: line-through;
+  opacity: 70%;
 }
