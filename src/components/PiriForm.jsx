@@ -17,6 +17,7 @@ function PiriForm(props) {
   return (
     <form action="" onSubmit={handleSubmit}>
       <input type="text" value={inputValue} onChange={handleChange} />
+
       <button type="submit">Add</button>
     </form>
   );
