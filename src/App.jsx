@@ -1,10 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import PiriForm from "./components/PiriForm";
 import PiriList from "./components/PiriList";
 
+function setStorageItem(key, value) {
+  localStorage.setItem(key, JSON.stringify(value))
+}
+
+function getStorageItem(key) {
+ const item = localStorage.getItem(key)
+ return !item ? [] : JSON.parse(item)
+}
+
+const storageKey = "bajskorv-key-lulz"
+
 function App() {
-  const [listItem, setListItem] = useState([]);
+  const [listItem, setListItem] = useState(getStorageItem(storageKey));
+  
+ useEffect(() => {
+  setStorageItem(storageKey, listItem)
+ },[listItem])
 
   function handleListItem(inputValue) {
     listItem.push({
